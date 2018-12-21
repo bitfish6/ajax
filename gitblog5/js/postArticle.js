@@ -9,7 +9,7 @@ submitBtn.onclick = () => {
             window.location.href = `./article.html?${result.number}`
         }
     }
-    xhr.open('POST', 'https://api.github.com/repos/bitfishxyz/ajax/issues');
+    xhr.open('POST', `https://api.github.com/repos/${localStorage.repoOwner}/${localStorage.repoName}/issues`);
     xhr.setRequestHeader('Authorization','bearer ' + localStorage.token)
     var title = document.getElementById('title').value
     var body = document.getElementById('body').value

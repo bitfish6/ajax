@@ -14,6 +14,6 @@ xhr.onload = res => {
     }
     document.getElementById('comments').innerHTML = innerHTML
 }
-xhr.open('GET', `https://api.github.com/repos/bitfishxyz/ajax/issues/${issueNumber}/comments`);
-xhr.setRequestHeader('Authorization','bearer e6f5fa6e93f068da39a64ab016720b6e42164217')
+xhr.open('GET', `https://api.github.com/repos/${localStorage.repoOwner}/${localStorage.repoName}/issues/${issueNumber}/comments`);
+xhr.setRequestHeader('Authorization','bearer ' + localStorage.token)
 xhr.send();

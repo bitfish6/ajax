@@ -14,6 +14,6 @@ moreBtn.onclick = (erevt) => {
         document.getElementById('blogsbody').innerHTML = document.getElementById('blogsbody').innerHTML + innerHTML
     }
     xhr.open('GET', `https://api.github.com/repos/vuejs/vue/issues?sort=updated&since=${localStorage.lastIssue}`);
-    xhr.setRequestHeader('Authorization','bearer e6f5fa6e93f068da39a64ab016720b6e42164217')
+    xhr.setRequestHeader('Authorization','bearer ' + localStorage.token)
     xhr.send();
 }

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="./css/bs3.css" rel="stylesheet">
+    <link href="./css/login.css" rel="stylesheet">
+</head>
+<body>
+    <div class="middle">
+        <a href="https://github.com/settings/tokens" target="_blank">
+            <button type="button" class="btn btn-primary  btn-block margin">
+                从github获取token</button></a>
+
+        <div class="input-group">
+            <input id="input" type="text" class="form-control" aria-label="...">
+            <div class="input-group-btn">
+                <button id="submit" type="button" class="btn btn-default" 
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    提交token</button>
+            </div>
+        </div>
+
+        <div>
+            <h3>什么是github access token</h3>
+            <p>类似于身份证。
+                你向github申请一个token，再告知本程序，
+                便可以以github账号的名义登录。
+            </p>
+            <h3>如何申请</h3>
+            <p>
+                点击上方按钮后会跳转到github相应页面。点击generate new token
+                按照指示操作就行了。需要且只需要勾选repo这个权限。
+            </p>
+        </div>
+    </div>
+    <script src="./js/signin.js"></script>
+</body>
+</html>

@@ -4,7 +4,8 @@ var xhr = new XMLHttpRequest();
 
 xhr.onload = res => {
     var issue = JSON.parse(res.target.responseText)
-    var innerHTML =  `<div class="panel-heading">${issue.title}</div>
+    var innerHTML =  `
+    <div class="panel-heading">${issue.title}</div>
          <div class="panel-body">
          <p>${issue.body}</p>
     </div>

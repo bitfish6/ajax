@@ -7,6 +7,8 @@ submitBtn.onclick = () => {
             alert('sucess')
             var result = JSON.parse(res.target.responseText)
             window.location.href = `./article.html?${result.number}`
+        } else {
+            alert(res.target.responseText)
         }
     }
     xhr.open('POST', `https://api.github.com/repos/${localStorage.repoOwner}/${localStorage.repoName}/issues`);

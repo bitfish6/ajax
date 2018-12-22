@@ -14,9 +14,11 @@ xhr.onload = res => {
     } else {
         var user = JSON.parse(res.target.responseText)
         localStorage.userName = user.name
+        
     }
 }
 
 xhr.open('GET', 'https://api.github.com/user');
 xhr.setRequestHeader('Authorization','bearer ' + token)
 xhr.send();
+

@@ -13,7 +13,7 @@ xhr.onload = res => {
         window.location.href = "./signin.html?onerror"
     } else {
         var user = JSON.parse(res.target.responseText)
-        localStorage.userName = user.name
+        document.getElementById('name').innerText = localStorage.userName
         
     }
 }

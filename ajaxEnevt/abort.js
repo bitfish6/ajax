@@ -1,4 +1,4 @@
-var xhr = new XMLHttpRequest();
+var xhr = new XMLHttpRequest()
 
 xhr.onloadstart = res => {
     console.log('onloadstart')

@@ -1,4 +1,4 @@
-localStorage.repoOwner = 'bitfishxyz'
+localStorage.repoOwner = 'bitfish6'
 localStorage.repoName = 'ajax'
 
 var token = localStorage.token

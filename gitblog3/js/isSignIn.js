@@ -1,4 +1,4 @@
-localStorage.repoOwner = 'bitfishxyz'
+localStorage.repoOwner = 'bitfish6'
 localStorage.repoName = 'ajax'
 
 var token = localStorage.token
@@ -13,7 +13,7 @@ xhr.onload = res => {
         window.location.href = "./signin.html?onerror"
     } else {
         var user = JSON.parse(res.target.responseText)
-        document.getElementById('name').innerText = localStorage.userName
+        document.getElementById('name').innerText = user.name
     }
 }
 
